@@ -1,1 +1,28 @@
-hi
+const int DOG_TO_HUMAN_YEARS = 7;
+const int CAT_TO_HUMAN_YEARS = 4;
+
+int dogAge(int age)
+{
+   return DOG_TO_HUMAN_YEARS * age;
+}
+void animalYears(int age, int& catYears, int& dogYears)
+{
+   catYears = CAT_TO_HUMAN_YEARS * age;
+   dogYears = DOG_TO_HUMAN_YEARS * age;
+}
+void fill(int arr[], unsigned int len)
+{
+   int age;
+   unsigned int i = 0;
+   
+   while(i < len)
+   {
+      cout << "Enter Number: ";
+      cin >> age;
+      if (age > 0)
+      {
+         arr[i]= age;
+         ++i;
+      }
+   }
+}
