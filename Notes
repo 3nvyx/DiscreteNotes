@@ -146,7 +146,20 @@ The Associative Law in logic states that the grouping of terms in logical operat
    - The grouping of terms in "p OR q OR r" does not affect the result.
 
 The associative law allows you to reorder and regroup terms in logical expressions without changing the meaning.
---------
+------------------------------------------------------------------------------------------------------------------
+| Law                   | Expression 1                             | Expression 2                                |
+|-----------------------|------------------------------------------|---------------------------------------------|
+| **Idempotent Laws**    | p ∨ p ≡ p                                | p ∧ p ≡ p                                   |
+| **Associative Laws**   | (p ∨ q) ∨ r ≡ p ∨ (q ∨ r)               | (p ∧ q) ∧ r ≡ p ∧ (q ∧ r)                  |
+| **Commutative Laws**   | p ∨ q ≡ q ∨ p                           | p ∧ q ≡ q ∧ p                              |
+| **Distributive Laws**  | p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r)        | p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r)           |
+| **Identity Laws**      | p ∨ F ≡ p                               | p ∧ T ≡ p                                   |
+| **Domination Laws**    | p ∧ F ≡ F                               | p ∨ T ≡ T                                   |
+| **Double Negation Law**| ¬(¬p) ≡ p                               |                                             |
+| **Complement Laws**    | p ∧ ¬p ≡ F                              | ¬T ≡ F                                      |
+| **De Morgan's Laws**   | ¬(p ∨ q) ≡ ¬p ∧ ¬q                     | ¬(p ∧ q) ≡ ¬p ∨ ¬q                        |
+| **Absorption Laws**    | p ∨ (p ∧ q) ≡ p                         | p ∧ (p ∨ q) ≡ p                            |
+| **Conditional Identities** | p → q ≡ ¬p ∨ q                     | p ↔ q ≡ (p → q) ∧ (q → p)                  |
 
   
 g++ -o main main.cpp functions.cpp
