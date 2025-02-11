@@ -34,6 +34,34 @@ Truth Tables
   | T   | F   | F     |
   | F   | T   | T     |
   | F   | F   | T     |
+---------
+
+Conditional statement is also implication. 
+  --Many ways to express conditional statement: p -> q
+- Converse: q → p
+  - The converse of a conditional statement switches the positions of the hypothesis and conclusion.
+  - Example: If p → q, then the converse is q → p.
+
+- Contrapositive: ~q → ~p
+  - The contrapositive of a conditional statement negates both the hypothesis and conclusion, then switches their positions.
+  - Example: If p → q, then the contrapositive is ~q → ~p.
+
+- Inverse: ~p → ~q
+  - The inverse of a conditional statement negates both the hypothesis and conclusion without switching their positions.
+  - Example: If p → q, then the inverse is ~p → ~q.
+- Conditional Statement: If it is raining, then I close the windows. (p → q)
+  - p: It is raining.
+  - q: I close the windows.
+
+- Converse: If I close the windows, then it is raining. (q → p)
+
+- Contrapositive: If I do not close the windows, then it is not raining. (~q → ~p)
+
+- Inverse: If it is not raining, then I do not close the windows. (~p → ~q)
+
+--------
+
+if 
 
 
 
