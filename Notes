@@ -3,5 +3,40 @@ Sets
     Denoted by capital letters - A,B, X, Y,...
     Elements of a set denoted by lowercase letters 
 
+Propositional Logic
+  Proposition is astatement that is either true of false. 
+  Negation is denoted for propositions that are not true. To negate is to make the statement the oppsite state of the Proposition. 
+  ~ is false 
+Conjunction
+  --> learn terms for conjunction. 
+  Symbol: ∧ Def: And
+  Symbol: ∨ Def: Or
+  ⊕. It can also be written as EOR, EXOR, or ⊻ Def: Excljusive or 
+Truth Tables
+  Diagram that show if a proposition is true or false.
+  | p   | q   | p ∨ q |
+  | --- | --- | ------- |
+  | T   | T   | T       |
+  | T   | F   | F       |
+  | F   | T   | F       |
+  | F   | F   | F       |
+  | p   | q   | p ∨ q | p ∧ q | ¬(p ∧ q) | (p ∨ q) ∧ ¬(p ∧ q) |
+  | --- | --- | ----- | ----- | -------- | ------------------- |
+  | T   | T   | T     | T     | F        | F                   |
+  | T   | F   | T     | F     | T        | T                   |
+  | F   | T   | T     | F     | T        | T                   |
+  | F   | F   | F     | F     | T        | F                   |
+  
+  If p __, then q____, denoted by p --> q
+  | p   | q   | p → q |
+  | --- | --- | ----- |
+  | T   | T   | T     |
+  | T   | F   | F     |
+  | F   | T   | T     |
+  | F   | F   | T     |
+
+
+
+  
 g++ -o main main.cpp functions.cpp
 .\main.exe
