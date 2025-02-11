@@ -1,3 +1,7 @@
+g++ -o main main.cpp functions.cpp
+.\main.exe
+
+
 Sets
   Set is a collection of objects; (duplcates not allowed)
     Denoted by capital letters - A,B, X, Y,...
@@ -61,9 +65,88 @@ Conditional statement is also implication.
 
 --------
 
-if 
+- Biconditional Statement ↔: (oppsite of Exclusive Or ⊕)
+  - A biconditional statement is true when both parts of the statement are either true or false at the same time.
+  - The biconditional is denoted by **p ↔ q** and is read as "p if and only if q".
+  - This means both the conditional statement (p → q) and its converse (q → p) are true.
 
+- Definition of Biconditional: 
+  - p ↔ q is equivalent to (p → q) ∧ (q → p).
+  - Example: "It is raining if and only if I close the windows."
+    - This means:  
+      1. If it is raining, then I close the windows. (p → q)  
+      2. If I close the windows, then it is raining. (q → p)
 
+- Truth Table for Biconditional (p ↔ q):
+  | p   | q   | p ↔ q |
+  | --- | --- | ----- |
+  | T   | T   | T     |
+  | T   | F   | F     |
+  | F   | T   | F     |
+  | F   | F   | T     |
+
+- Key Points:
+  - A biconditional statement is **true** if both parts (p and q) have the same truth value (both true or both false).
+  - A biconditional statement is **false** if one part is true and the other is false.
+
+Order of Operations:
+1. Negation (~)
+   - Example: ~p (not p)
+2. Conjunction (AND) ( ∧ )
+   - Example: p ∧ q (p and q)
+3. Disjunction (OR) ( ∨ )
+   - Example: p ∨ q (p or q)
+4. Implication (Conditional) ( → )
+   - Example: p → q (if p, then q)
+5. Biconditional ( ↔ )
+   - Example: p ↔ q (p if and only if q)
+
+------
+Propositional Equivalencies ≡:
+- Two compound statements P and Q are logically equivalent if they have the same truth value for all possible combinations of truth values for their component statements.
+- If P and Q are logically equivalent, we write: P ≡ Q
+- If P and Q are NOT logically equivalent, we write: P ≠ Q
+
+De Morgan's Laws describe how negation interacts with conjunction (AND) and disjunction (OR). These laws allow us to simplify logical expressions.
+
+1. First Law (for negation of a conjunction):
+   - ~(p ∧ q) ≡ ~p ∨ ~q
+   - "Not (p AND q)" is logically equivalent to "(Not p) OR (Not q)".
+
+2. Second Law (for negation of a disjunction):
+   - ~(p ∨ q) ≡ ~p ∧ ~q
+   - "Not (p OR q)" is logically equivalent to "(Not p) AND (Not q)".
+
+These laws are helpful when converting between different forms of logical expressions, especially when working with negations.
+
+Distributive Law:
+
+The Distributive Law in logic describes how conjunction (AND) and disjunction (OR) distribute over each other. There are two forms of the distributive law:
+
+1. Distributive Law of AND over OR:
+   - p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r)
+   - "p AND (q OR r)" is logically equivalent to "(p AND q) OR (p AND r)".
+
+2. Distributive Law of OR over AND:
+   - p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r)
+   - "p OR (q AND r)" is logically equivalent to "(p OR q) AND (p OR r)".
+
+These laws are useful for simplifying or factoring logical expressions.
+
+Associative Law:
+
+The Associative Law in logic states that the grouping of terms in logical operations does not affect the result, as long as the order of the operations remains the same. This law applies to both conjunction (AND) and disjunction (OR).
+
+1. Associative Law for AND (∧):
+   - (p ∧ q) ∧ r ≡ p ∧ (q ∧ r)
+   - The grouping of terms in "p AND q AND r" does not affect the result.
+
+2. Associative Law for OR (∨):
+   - (p ∨ q) ∨ r ≡ p ∨ (q ∨ r)
+   - The grouping of terms in "p OR q OR r" does not affect the result.
+
+The associative law allows you to reorder and regroup terms in logical expressions without changing the meaning.
+--------
 
   
 g++ -o main main.cpp functions.cpp
