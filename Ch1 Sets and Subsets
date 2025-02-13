@@ -1,0 +1,81 @@
+g++ -o main main.cpp functions.cpp
+.\main.exe
+1. Set Definition:
+   A set is a well-defined collection of distinct objects or elements.
+   Example: A = {1, 2, 3, 4}
+   - The objects in a set are called elements or members.
+   - Sets are usually denoted by curly braces, e.g., A = {a, b, c}.
+
+2. Subset Definition:
+   A subset is a set that contains only elements that are also in another set.
+   - If set B is a subset of set A, it means every element of B is also an element of A.
+   - Notation: B ⊆ A (read as "B is a subset of A").
+   - Example: If A = {1, 2, 3} and B = {2, 3}, then B ⊆ A.
+
+3. Proper Subset:
+   A proper subset of a set A is a subset of A that is not equal to A.
+   - Notation: B ⊂ A (read as "B is a proper subset of A").
+   - Example: If A = {1, 2, 3} and B = {1, 2}, then B ⊂ A.
+
+4. Power Set:
+   The power set of a set A is the set of all possible subsets of A, including the empty set and A itself.
+   - Notation: P(A).
+   - Example: If A = {1, 2}, then P(A) = {∅, {1}, {2}, {1, 2}}.
+   - The number of subsets of a set with n elements is 2^n.
+
+5. Universal Set:
+   The universal set is the set that contains all elements under consideration for a particular discussion.
+   - Denoted by U.
+   - All other sets in a given problem are subsets of the universal set.
+
+6. Set Operations:
+   - Union ( ∪ ): A ∪ B = {x | x ∈ A or x ∈ B}.
+   - Intersection ( ∩ ): A ∩ B = {x | x ∈ A and x ∈ B}.
+   - Difference ( - ): A - B = {x | x ∈ A and x ∉ B}.
+   - Complement ( A' ): A' = {x | x ∈ U and x ∉ A}.
++-----------------------+---------------------------------------------------------------+
+| Symbol                | Meaning                                                       |
++-----------------------+---------------------------------------------------------------+
+| ∅                     | Empty set (no elements)                                       |
++-----------------------+---------------------------------------------------------------+
+| ∈                     | Element of a set                                              |
++-----------------------+---------------------------------------------------------------+
+| ∉                     | Not an element of a set                                       |
++-----------------------+---------------------------------------------------------------+
+| ⊆                     | Subset (set A is a subset of set B)                           |
++-----------------------+---------------------------------------------------------------+
+| ⊂                     | Proper subset (set A is a proper subset of set B)             |
++-----------------------+---------------------------------------------------------------+
+| ∪                     | Union (combines elements from both sets)                      |
++-----------------------+---------------------------------------------------------------+
+| ∩                     | Intersection (common elements between sets)                   |
++-----------------------+---------------------------------------------------------------+
+| -                     | Difference (elements in set A but not in set B)              |
++-----------------------+---------------------------------------------------------------+
+| A'                     | Complement (elements not in set A, relative to the universal set) |
++-----------------------+---------------------------------------------------------------+
+| P(A)                   | Power set (set of all subsets of set A)                       |
++-----------------------+---------------------------------------------------------------+
+| U                     | Universal set (set containing all elements under consideration) |
++-----------------------+---------------------------------------------------------------+
+
+**Cardinality refers to the number of elements in a set.
+
++-------------------------+---------------------+----------------------------------------------------------+
+| Set                     | Symbol              | Examples of Elements                                      |
++-------------------------+---------------------+----------------------------------------------------------+
+| Natural Numbers         | ℕ                   | {0, 1, 2, 3, 4, ...}                                      |
+|                         |                     | (Note: Some exclude 0, but in discrete math, 0 is often  |
+|                         |                     | included)                                                  |
++-------------------------+---------------------+----------------------------------------------------------+
+| Integers                | ℤ                   | {..., -3, -2, -1, 0, 1, 2, 3, ...}                        |
++-------------------------+---------------------+----------------------------------------------------------+
+| Rational Numbers        | ℚ                   | {1/2, -3/4, 5, 0.75, ...}                                 |
+|                         |                     | (Can be expressed as fractions where p and q are integers |
+|                         |                     | and q ≠ 0)                                                |
++-------------------------+---------------------+----------------------------------------------------------+
+| Irrational Numbers      | ℝ \ ℚ               | {√2, π, e, ...}                                          |
+|                         |                     | (Numbers that cannot be expressed as fractions)           |
++-------------------------+---------------------+----------------------------------------------------------+
+| Real Numbers            | ℝ                   | {-2.5, 0, 1.5, π, √3, ...}                                |
++-------------------------+---------------------+----------------------------------------------------------+
